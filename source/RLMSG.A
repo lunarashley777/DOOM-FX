@@ -1,0 +1,216 @@
+;**********************************************************************
+;*                                                                    *
+;*                   P R O J E C T :   REALITY_ENGINE                 *
+;*                                                                    *
+;*                      RL MSGS MODULE BY PLAY134                     *
+;*                                                                    *
+;**********************************************************************
+
+	include	rage.i
+	include	rle.i
+	include	gsumac.i
+
+	public	_RLMsgs
+
+
+	SECTION	ENGINE_GSUCODE
+	cpu	sfx
+
+;
+;	* * * * * * *       RL MSGs        * * * * * * *
+;
+;
+;
+_RLMsgs
+;
+;
+;
+;
+PICKEDUP	dc.b	'PICKED UP',0
+YOUGOTA		dc.b	'YOU GOT A',0
+;
+;
+;
+;
+ARMORBONUSMSGA equ PICKEDUP
+;
+ARMORBONUSMSGB
+	dc.b	" AN ARMOR",0
+ARMORBONUSMSGC
+	dc.b	" BONUS",0
+BACKPACKMSGA equ PICKEDUP
+;
+BACKPACKMSGB
+	dc.b	" A BACKPA",0
+BACKPACKMSGC
+	dc.b	"CK",0
+BERSERKMSGA
+	dc.b	"BERSERK",0
+BERSERKMSGB
+	dc.b	"!",0
+BERSERKMSGC
+	dc.b	"",0
+BFGMSGA
+	dc.b	"THE BFG90!",0
+BFGMSGB
+	dc.b	"00!  OH Y",0
+BFGMSGC
+	dc.b	"ES...",0
+BLUEKEYCARDMSGA
+	dc.b	"YOU NEED ",0
+BLUEKEYCARDMSGB
+	dc.b	"A BLUE KE",0
+BLUEKEYCARDMSGC
+	dc.b	"Y!",0
+BULLETSBOXMSGA	equ	PICKEDUP
+;
+BULLETSBOXMSGB
+	dc.b	" A BOX OF",0
+BULLETSBOXMSGC
+	dc.b	" BULLETS",0
+CELLMSGA	equ	PICKEDUP
+;
+CELLMSGB
+	dc.b	" AN ENERG",0
+CELLMSGC
+	dc.b	"Y CELL",0
+CELLPACKMSGA	equ	PICKEDUP
+;
+CELLPACKMSGB
+	dc.b	" A CELL P",0
+CELLPACKMSGC
+	dc.b	" ACK",0
+CHAINGUNMSGA equ YOUGOTA
+;
+CHAINGUNMSGB
+	dc.b	" CHAINGUN",0
+CHAINGUNMSGC
+	dc.b	"!",0
+CHAINSAWMSGA
+	dc.b	"A CHAINSA",0
+CHAINSAWMSGB
+	dc.b	"W! FIND S",0
+CHAINSAWMSGC
+	dc.b	"OME MEAT!",0
+CLIPMSGA	equ	PICKEDUP
+;
+CLIPMSGB
+	dc.b	" A CLIP",0
+CLIPMSGC
+	dc.b	"",0
+COMPUTERMAPMSGA equ YOUGOTA
+;
+COMPUTERMAPMSGB
+	dc.b	"COMPUTER ",0
+COMPUTERMAPMSGC
+	dc.b	"AREA MAP",0
+HEALTHBONUSMSGA	equ	PICKEDUP
+;
+HEALTHBONUSMSGB
+	dc.b	" A HEALTH",0
+HEALTHBONUSMSGC
+	dc.b	" BONUS",0
+INVISIBLEMSGA
+	dc.b	"PARTIAL I",0
+INVISIBLEMSGB
+	dc.b	"NVISIBILI",0
+INVISIBLEMSGC
+	dc.b	"TY",0
+INVULNERABLEMSGA
+	dc.b	"INVULNERA",0
+INVULNERABLEMSGB
+	dc.b	"BILITY!",0
+INVULNERABLEMSGC
+	dc.b	"",0
+LIGHTGOGGLESMSGA
+	dc.b	"LIGHT AMP",0
+LIGHTGOGGLESMSGB
+	dc.b	"LIFICATIO",0
+LIGHTGOGGLESMSGC
+	dc.b	"N VISOR",0
+MEDIKITMSGA	equ	PICKEDUP
+;
+MEDIKITMSGB
+	dc.b	" A MEDIKI",0
+MEDIKITMSGC
+	dc.b	"T",0
+MEGAARMORMSGA	equ	PICKEDUP
+;
+MEGAARMORMSGB
+	dc.b	" THE MEGA",0
+MEGAARMORMSGC
+	dc.b	"ARMOR",0
+PLASMAGUNMSGA equ YOUGOTA
+;
+PLASMAGUNMSGB
+	dc.b	" PLASMA G",0
+PLASMAGUNMSGC
+	dc.b	"UN!",0
+RADSUITMSGA
+	dc.b	"RADIATION",0
+RADSUITMSGB
+	dc.b	" SHIELDIN",0
+RADSUITMSGC
+	dc.b	"G SUIT",0
+REDKEYCARDMSGA
+	dc.b	"YOU NEED ",0
+REDKEYCARDMSGB
+	dc.b	"A RED KEY",0
+REDKEYCARDMSGC
+	dc.b	"!",0
+ROCKETGUNMSGA equ YOUGOTA
+;
+ROCKETGUNMSGB
+	dc.b	" ROCKET L",0
+ROCKETGUNMSGC
+	dc.b	"AUNCHER!",0
+ROCKETMSGA
+	dc.b	"",0
+ROCKETMSGB
+	dc.b	" A ROCKET",0
+ROCKETMSGC
+	dc.b	"",0
+ROCKETSBOXMSGA	equ	PICKEDUP
+;
+ROCKETSBOXMSGB
+	dc.b	"",0
+ROCKETSBOXMSGC
+	dc.b	" ROCKETS",0
+SHELLSBOXMSGA	equ	PICKEDUP
+;
+SHELLSBOXMSGB
+	dc.b	" A BOX OF",0
+SHELLSBOXMSGC
+	dc.b	" SHELLS",0
+SHELLSMSGA	equ	PICKEDUP
+;
+SHELLSMSGB
+	dc.b	" 4 SHOTGU",0
+SHELLSMSGC
+	dc.b	"N SHELLS",0
+SHOTGUNMSGA equ YOUGOTA
+;
+SHOTGUNMSGB
+	dc.b	" SHOTGUN!",0
+SHOTGUNMSGC
+	dc.b	"",0
+STIMPACKMSGA	equ	PICKEDUP
+;
+STIMPACKMSGB
+	dc.b	" A STIMPA",0
+STIMPACKMSGC
+	dc.b	"CK",0
+SUPERCHARGEMSGA
+	dc.b	"SUPERCHAR",0
+SUPERCHARGEMSGB
+	dc.b	"GE!",0
+SUPERCHARGEMSGC
+	dc.b	"",0
+YELLOWKEYCARDMSGA
+	dc.b	"YOU NEED ",0
+YELLOWKEYCARDMSGB
+	dc.b	"A YELLOW ",0
+YELLOWKEYCARDMSGC
+	dc.b	"KEY!",0
+
+;	dc.b	-1
