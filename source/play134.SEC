@@ -63,7 +63,7 @@ SECTION Name                     LOAD      PC        Size
              RL_EPISODEMENU_DATA $801F88F5 $         $00000AF9 / MAP 54
                      _OBJECTDATA $8016FE9E $0056FE9E $0000015E
                     _MOBJECTDATA $801E5020 $005E5020 $000005F4
-                          E1M1_A $8018AE40 $         $00005FBA $8018A000 
+                          E1M1_A $8018AE40 $         $00005FBA $8018A000 / 189ed4 - 18ffba ?
                           E1M1_B $801D7097 $         $0000162C $801BE86E
                           E1M2_A $80100000 $00500000 $0000D28D
                           E1M2_B $800FD44E $004FD44E $00002B8C
