@@ -5,7 +5,7 @@ Para compilar:
 
 1 - criar os diretórios conforme setuprl
 
-2 - execute seturl
+2 - execute setuprl
 
 3 - execute smake rl 
 
