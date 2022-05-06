@@ -9,6 +9,6 @@ Para compilar:
 
 3 - execute smake rl 
 
-4 - execute bin
+
 
 
