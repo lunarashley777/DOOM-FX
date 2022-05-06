@@ -13,8 +13,9 @@
 	@date TO=SysDate
 	xa -a$*.a -o$*.o -s -c65816
 	@copy $*.o RLOBJ: QUIET
-	-@bumprev 1 $*.a
-	@delete >NIL: $*.a.h
+#	-@execute bumprev 1 $*.a
+#	@delete >NIL: $*.a.h
+	@delete >NIL: $*.o
 
 .c.o:
 	sc $*.c math=ffp DATA=FAR
@@ -272,7 +273,7 @@ rev.o: rev.a rl.rev
 
 rl: $(RL)
 	@date TO=SysDate
-	-@delete RLOBJ:\#?.d RLOBJ:RL. QUIET
+#	-@delete RLOBJ:\#?.d RLOBJ:RL. QUIET
 	@avail FLUSH >NIL:
 	@avail FLUSH >NIL:
 #	cls
@@ -282,14 +283,14 @@ rl: $(RL)
 $(RRL)
 <
 #	@date
-	-@bumprev 1 RL
-	@delete RL.h QUIET
+#	-@execute bumprev 1 RL
+#	@delete RL.h QUIET
 #	-@copy RLOBJ:\#?.d RL: QUIET
 #	-@delete RL:RL. QUIET
 #	-@copy RLOBJ:RL. RL: >NIL:
 #	-@delete RLOBJ:RL. QUIET
 #	@version RL.
-
+	@execute bin
 
 
 rlq:
@@ -378,11 +379,13 @@ xb: $(XB)
 	@avail FLUSH >NIL:
 	@avail FLUSH >NIL:
 	-@run >NIL: delete RL:XB. >NIL:
-	xl <-u -w -x -y -z -s -kXB.bnk -tXB.sec -eRLOBJ:XB. -2RLOBJ:RL5934. -l<
+#	xl <-u -w -x -y -z -s -kXB.bnk -tXB.sec -eRLOBJ:XB. -2RLOBJ:RL5934. -l<
+	xl <-u -w -x -y -z -s -kXB.bnk -tXB.sec -eRLOBJ:XB. -2RLOBJ:RL. -l<
+#	xl <-u -w -x -y -z -s -kXB.bnk -tXB.sec -eRLOBJ:XB. -l<
 $(RXB)
 <
-	-@bumprev 1 XB
-	@delete XB.h QUIET
+#	-@bumprev 1 XB
+#	@delete XB.h QUIET
 #	xr -v -eRLOBJ:XB. -s$$00e00210 -z$$2000 -k -y -xRLOBJ:XB.BIN
 
 
@@ -503,7 +506,7 @@ iffdim: $(IFFDIM)
 #	ROM Creation MACROS
 #
 prgrom:
-	xr -v -eRLOBJ:RL. -s$$80000000 -z$$80000 -xRLOBJ:RL.BIN -y
+	xr -v -eRLOBJ:RL. -s$$80000000 -z$$200000 -xRLOBJ:RL.BIN -y
 
 prgrom0a:
 	off
