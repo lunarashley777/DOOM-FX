@@ -40,7 +40,7 @@ Assign DIFF: DOOMIFF:
 
 path RAM:C add
 path HD:SOURCE add
-;path HD:MAKE add
+path HD:MAKE add
 ;path HD:binaries add
 path ACCESS: add
 ;path DOOM: add
