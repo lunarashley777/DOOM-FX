@@ -7,7 +7,7 @@ Para compilar:
 
 2 - execute setuprl
 
-3 - execute smake rl 
+3 - smake rl 
 
 
 
