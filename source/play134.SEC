@@ -132,7 +132,7 @@ SECTION Name                     LOAD      PC        Size
                          INVERSE $80190000 $00328000 $00008000
                         SIGHTRAY $801C8D00 $005C8D00 $000021F8
                    RLSCNPIXSCALE $80188655 $00588655 $00006669
-                    _CHARDEFFIST $8013BBD0 $         $000009C0 $0013BBD0
+                    _CHARDEFFIST $8013BBD0 $         $000009C0 $001DF63F
                   _CHARDEFPISTOL $801F711D $         $00000C00 $001F711d
                  _CHARDEFSHOTGUN $801ECAED $         $00001A00 $001ECAED
                 _CHARDEFCHAINSAW $801F238E $         $00000DA0 $001F238E
