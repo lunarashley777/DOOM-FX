@@ -1,3 +1,4 @@
+    PLIST    ON
 ;**********************************************************************
 ;*                                                                    *
 ;*                       P R O J E C T :   R A G E                    *
@@ -182,7 +183,8 @@ RAGE7800
 	cmp	#2				; Hurt Me Plent/Ultra-Violence/Nightmare?
 	bcs	RAGE7900			; Yes
 	cpy	#18				; Stop at end of Episode 2 for Skill 2
-	beq	RAGE7820	; RAGE9200
+;	beq	RAGE7820	; RAGE9200 RL5960
+	beq	RAGE9200	; RL5934
 	dec	a
 	beq	RAGE7900
 	cpy	#9				; Stop at end of Episode 1 for Skill 1
