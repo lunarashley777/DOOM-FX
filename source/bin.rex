@@ -15,7 +15,7 @@ MakeBinCmd
 MakeBinCmd = "smake xb"
 'ECHO ' || MakeBinCmd
 MakeBinCmd
-MakeBinCmd = "COPY RLOBJ:RL5960.sfc hd:compbi"
+MakeBinCmd = "COPY RLOBJ:RL5934.sfc hd:compbi"
 'ECHO ' || MakeBinCmd
 MakeBinCmd
 MakeBinCmd = "COPY RLOBJ:XB.bin hd:compbi"
