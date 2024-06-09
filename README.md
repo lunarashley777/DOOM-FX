@@ -27,7 +27,7 @@ Doom/FX for Super Nintendo with SuperFX GSU2A
 | Device | Volume | Path                                      |
 |--------|--------|-------------------------------------------|
 | RL     | RL     | [path to repo]\REALITY\source             |
-| RL2    | RL2    | [path to repo]\REALITY2\                  |
+| RL2    | RL2    | [path to repo]\REALITY2                   |
 | ACCESS | ACCESS | [path to repo]\ACCESS\binaries            |
 | RLDATA | RLDATA | [path to repo]\REALITY2\DATA              |
 | RLMUS  | RLMUS  | [path to repo]\REALITY\source\MUSIC       |
