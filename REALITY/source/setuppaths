@@ -1,6 +1,0 @@
-path ACCESS: add
-path HD:MAKE add
-path HD:SOURCE add
-path HD:binaries add
-MakeDir RAM:RLOBJ
-Assign RLOBJ: RAM:RLOBJ

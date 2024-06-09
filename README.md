@@ -26,14 +26,9 @@ Doom/FX for Super Nintendo with SuperFX GSU2A
 
 | Device | Volume | Path                                      |
 |--------|--------|-------------------------------------------|
-| RL     | RL     | [path to repo]\REALITY\source             |
-| RL2    | RL2    | [path to repo]\REALITY2                   |
-| ACCESS | ACCESS | [path to repo]\ACCESS                     |
-| RLDATA | RLDATA | [path to repo]\REALITY2\DATA              |
-| RLMUS  | RLMUS  | [path to repo]\REALITY\source\MUSIC       |
-| RLLEV  | RLLEV  | [path to repo]\REALITY2\LEVELS            |
-| RLART  | RLART  | [path to repo]\REALITY2\ART               |
 | HD     | HD     | [path to repo]\REALITY                    |
+| HD2    | HD2    | [path to repo]\REALITY2                   |
+| ACCESS | ACCESS | [path to repo]\ACCESS                     |
 
 - Start the emulated Amiga again.
 
@@ -41,8 +36,8 @@ Doom/FX for Super Nintendo with SuperFX GSU2A
 In Workbench:  
 go to ``System -> System -> Shell``  
 in AmigaShell:  
-Change to the source code drive by typing ``rl:``  
-Setup paths: ``execute setuppaths`` (this only needs to be done once per session, if you restart WinUAE, you will have to run this again)  
+Change to the HD by typing ``hd:``  
+Setup paths: ``execute setup`` (this only needs to be done once per session, if you restart WinUAE, you will have to run this again)  
 Build the ROM: ``smake rl``  
 
 In the REALITY/compbi directory, there should be a .sfc ROM file present if everything worked successfully.  
