@@ -4,4 +4,3 @@ path HD:SOURCE add
 path HD:binaries add
 MakeDir RAM:RLOBJ
 Assign RLOBJ: RAM:RLOBJ
-Assign RLART: RLDATA:

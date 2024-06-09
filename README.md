@@ -31,7 +31,8 @@ Doom/FX for Super Nintendo with SuperFX GSU2A
 | ACCESS | ACCESS | [path to repo]\ACCESS                     |
 | RLDATA | RLDATA | [path to repo]\REALITY2\DATA              |
 | RLMUS  | RLMUS  | [path to repo]\REALITY\source\MUSIC       |
-| RLLEV  | RLLEV  | [path to repo]\REALITY2\DATA\LEVELS       |
+| RLLEV  | RLLEV  | [path to repo]\REALITY2\LEVELS            |
+| RLART  | RLART  | [path to repo]\REALITY2\ART               |
 | HD     | HD     | [path to repo]\REALITY                    |
 
 - Start the emulated Amiga again.
