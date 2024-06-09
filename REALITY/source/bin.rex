@@ -29,4 +29,10 @@ MakeBinCmd
 MakeBinCmd = "COPY HD:source/RL.BNK hd:compbi"
 'ECHO ' || MakeBinCmd
 MakeBinCmd
+MakeBinCmd = "COPY HD:source/XB.SEC hd:compbi"
+'ECHO ' || MakeBinCmd
+MakeBinCmd
+MakeBinCmd = "COPY HD:source/XB.BNK hd:compbi"
+'ECHO ' || MakeBinCmd
+MakeBinCmd
 EXIT
