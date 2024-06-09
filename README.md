@@ -39,5 +39,6 @@ in AmigaShell:
 Change to the HD by typing ``hd:``  
 Setup paths: ``execute setup`` (this only needs to be done once per session, if you restart WinUAE, you will have to run this again)  
 Build the ROM: ``smake rl``  
+To build the ROM and write shell output to a log file located in REALITY/compbi: ``execute buildtolog``
 
 In the REALITY/compbi directory, there should be a .sfc ROM file present if everything worked successfully.  
