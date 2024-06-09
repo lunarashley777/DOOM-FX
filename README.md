@@ -22,13 +22,13 @@ Doom/FX for Super Nintendo with SuperFX GSU2A
 4. Mount the source directories as virtual drives  
 - Download or clone the repo if you haven't already. If you downloaded as a zip, extract it somewhere.  
 - Shut down the emulated Amiga by opening the configuration window and clicking "restart".  
-- Mount the drives as follows:  
+- Mount the drives as follows:  (do not remove the SYSTEM drive)
 
 | Device | Volume | Path                                      |
 |--------|--------|-------------------------------------------|
 | RL     | RL     | [path to repo]\REALITY\source             |
 | RL2    | RL2    | [path to repo]\REALITY2                   |
-| ACCESS | ACCESS | [path to repo]\ACCESS\binaries            |
+| ACCESS | ACCESS | [path to repo]\ACCESS                     |
 | RLDATA | RLDATA | [path to repo]\REALITY2\DATA              |
 | RLMUS  | RLMUS  | [path to repo]\REALITY\source\MUSIC       |
 | RLLEV  | RLLEV  | [path to repo]\REALITY2\DATA\LEVELS       |
