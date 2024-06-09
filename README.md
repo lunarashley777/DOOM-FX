@@ -45,4 +45,4 @@ Change to the source code drive by typing ``rl:``
 Setup paths: ``execute setuppaths`` (this only needs to be done once per session, if you restart WinUAE, you will have to run this again)  
 Build the ROM: ``smake rl``  
 
-In the REALITY/COMPBI directory, there should be a .sfc ROM file present if everything worked successfully.  
+In the REALITY/compbi directory, there should be a .sfc ROM file present if everything worked successfully.  
