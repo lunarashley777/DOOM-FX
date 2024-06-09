@@ -23,7 +23,6 @@ Doom/FX for Super Nintendo with SuperFX GSU2A
 - Download or clone the repo if you haven't already. If you downloaded as a zip, extract it somewhere.  
 - Shut down the emulated Amiga by opening the configuration window and clicking "restart".  
 - Mount the drives as follows:  
-- Start the emulated Amiga again.
 
 | Device | Volume | Path                                |
 |--------|--------|-------------------------------------|
@@ -33,6 +32,8 @@ Doom/FX for Super Nintendo with SuperFX GSU2A
 | RLMUS  | RLMUS  | [path to repo]\REALITY\source\MUSIC |
 | RLLEV  | RLLEV  | [path to repo]\REALITY2\LEVELS      |
 | HD     | HD     | [path to repo]\REALITY\             |
+
+- Start the emulated Amiga again.
 
 5. Build the game!  
 In Workbench:  
