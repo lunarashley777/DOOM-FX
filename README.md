@@ -3,7 +3,7 @@ Doom/FX for Super Nintendo with SuperFX GSU2A
 
 ## To assemble:  
 
-``MAKE SURE to save your WinUAE config when you make any changes, and load it before starting!!``  
+``MAKE SURE your WinUAE config is loaded, and any changes you make to the config are saved!!``  
 
 1. Set up an emulated Amiga 4000 in WinUAE. [Follow this tutorial up to 4:09 to set up the A4000.](https://youtu.be/Cqu2NAZ9dgg)  
 
