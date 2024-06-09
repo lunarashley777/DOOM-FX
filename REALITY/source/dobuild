@@ -1,2 +1,0 @@
-smake rl
-copy RLOBJ:#?.sfc hd:

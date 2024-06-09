@@ -24,14 +24,16 @@ Doom/FX for Super Nintendo with SuperFX GSU2A
 - Shut down the emulated Amiga by opening the configuration window and clicking "restart".  
 - Mount the drives as follows:  
 
-| Device | Volume | Path                                |
-|--------|--------|-------------------------------------|
-| RL     | RL     | [path to repo]\REALITY\source       |
-| ACCESS | ACCESS | [path to repo]\ACCESS\binaries      |
-| RLDATA | RLDATA | [path to repo]\REALITY2\DATA        |
-| RLMUS  | RLMUS  | [path to repo]\REALITY\source\MUSIC |
-| RLLEV  | RLLEV  | [path to repo]\REALITY2\LEVELS      |
-| HD     | HD     | [path to repo]\REALITY\             |
+| Device | Volume | Path                                      |
+|--------|--------|-------------------------------------------|
+| RL     | RL     | [path to repo]\REALITY\source             |
+| RL2    | RL2    | [path to repo]\REALITY2\                  |
+| ACCESS | ACCESS | [path to repo]\ACCESS\binaries            |
+| RLDATA | RLDATA | [path to repo]\REALITY2\DATA              |
+| RLMUS  | RLMUS  | [path to repo]\REALITY\source\MUSIC       |
+| RLLEV  | RLLEV  | [path to repo]\REALITY2\DATA\LEVELS       |
+| RLART  | RLART  | [path to repo]\REALITY2\DATA\ART          |
+| HD     | HD     | [path to repo]\REALITY\                   |
 
 - Start the emulated Amiga again.
 
@@ -41,6 +43,6 @@ go to ``System -> System -> Shell``
 in AmigaShell:  
 Change to the source code drive by typing ``rl:``  
 Setup paths: ``execute setuppaths`` (this only needs to be done once per session, if you restart WinUAE, you will have to run this again)  
-Build the ROM: ``execute dobuild``  
+Build the ROM: ``smake rl``  
 
-In the REALITY directory, there should be a .sfc ROM file if everything worked successfully.  
+In the REALITY/COMPBI directory, there should be a .sfc ROM file present if everything worked successfully.  
