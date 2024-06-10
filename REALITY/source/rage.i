@@ -83,9 +83,9 @@ useE3M3			var	1		; 1=Enable E3M3 "Pandemonium"
 useE3M4			var	1		; 1=Enable E3M4 "House of Pain"
 useE3M5			var	0		; 1=Enable E3M5 "Unholy Cathedral"
 useE3M6			var	1		; 1=Enable E3M6 "Mt. Erebus"
-useE3M7			var	0 ; 1		; 1=Enable E3M7 "Limbo"
-useE3M8			var	0 ; 1		; 1=Enable E3M8 "Dis"
-useE3M9			var	0 ; 1		; 1=Enable E3M9 "Warrens"
+useE3M7			var	1		; 1=Enable E3M7 "Limbo"
+useE3M8			var	1		; 1=Enable E3M8 "Dis"
+useE3M9			var	1		; 1=Enable E3M9 "Warrens"
 ;
 useE1M2			var	useE1M2*(1-useE1M1ONLY))
 useE1M3			var	useE1M3*(1-useE1M1ONLY))
