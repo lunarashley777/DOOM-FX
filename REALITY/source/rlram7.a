@@ -379,8 +379,8 @@ TGdZLower		ds.w	1		; Lower DeltaZ Bounds
 ;
 ;	>>>   MISCELLANEOUS VARIABLES   <<<
 ;
-BaronOfHellCount	ds.w	1		; BaronOfHell Counter (E1M8 Special)
-;play134isthebest			ds.b	1		; UNUSED
+BaronOfHellCount	ds.b	1		; BaronOfHell Counter (E1M8 Special)
+			ds.b	1		; UNUSED
 ;
 ;	* * * * * * *       MULTIPLAYER VARIABLES       * * * * * * *
 ;
