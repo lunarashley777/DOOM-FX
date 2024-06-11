@@ -13,8 +13,6 @@
 	@date TO=SysDate
 	xa -a$*.a -o$*.o -s -c65816
 	@copy $*.o RLOBJ: QUIET
-#	-@execute bumprev 1 $*.a
-#	@delete >NIL: $*.a.h
 	@delete >NIL: $*.o
 
 .c.o:
@@ -273,23 +271,12 @@ rev.o: rev.a rl.rev
 
 rl: $(RL)
 	@date TO=SysDate
-#	-@delete RLOBJ:\#?.d RLOBJ:RL. QUIET
 	@avail FLUSH >NIL:
 	@avail FLUSH >NIL:
-#	cls
-#	@date
 	-@run >NIL: delete RL:RL. >NIL:
 	xl <-u -w -x -y -z -s -kRL.bnk -tRL.sec -eRLOBJ:RL. -l<
 $(RRL)
 <
-#	@date
-#	-@execute bumprev 1 RL
-#	@delete RL.h QUIET
-#	-@copy RLOBJ:\#?.d RL: QUIET
-#	-@delete RL:RL. QUIET
-#	-@copy RLOBJ:RL. RL: >NIL:
-#	-@delete RLOBJ:RL. QUIET
-#	@version RL.
 	@execute bin
 
 
@@ -314,7 +301,6 @@ rlx: $(RL)
 	xl <-eRL. -l<
 $(RRL)
 <
-#	@version RL.
 
 
 
@@ -328,7 +314,6 @@ rld: $(RL)
 	xl <-w -x -y -z -s -dRL.d -kRL.bnk -tRL.sec -eRLOBJ:RL. -l<
 $(RRL)
 <
-#	@version RL.
 
 
 
@@ -342,7 +327,6 @@ rlc: $(RL)
 	xl <-w -x -y -z -s -cRL.c -kRL.bnk -tRL.sec -eRLOBJ:RL. -l<
 $(RRL)
 <
-#	@version RL.
 
 
 
@@ -362,10 +346,6 @@ $(RRL)
 	@date
 	-@bumprev 1 RL
 	@delete RL.h QUIET
-#	-@copy RLOBJ:\#?.d RL: QUIET
-#	-@copy RLOBJ:RL. RL: QUIET
-#	-@delete RLOBJ:RL. QUIET
-#	@version RL.
 
 
 #
@@ -379,14 +359,9 @@ xb: $(XB)
 	@avail FLUSH >NIL:
 	@avail FLUSH >NIL:
 	-@run >NIL: delete RL:XB. >NIL:
-#	xl <-u -w -x -y -z -s -kXB.bnk -tXB.sec -eRLOBJ:XB. -2RLOBJ:RL5934. -l<
 	xl <-u -w -x -y -z -s -kXB.bnk -tXB.sec -eRLOBJ:XB. -2RLOBJ:RL. -l<
-#	xl <-u -w -x -y -z -s -kXB.bnk -tXB.sec -eRLOBJ:XB. -l<
 $(RXB)
 <
-#	-@bumprev 1 XB
-#	@delete XB.h QUIET
-#	xr -v -eRLOBJ:XB. -s$$00e00210 -z$$2000 -k -y -xRLOBJ:XB.BIN
 
 
 
