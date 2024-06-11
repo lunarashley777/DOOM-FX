@@ -277,7 +277,7 @@ rl: $(RL)
 	xl <-u -w -x -y -z -s -kRL.bnk -tRL.sec -eRLOBJ:RL. -l<
 $(RRL)
 <
-	@execute bin
+	@execute RL:make/bin
 
 
 rlq:
