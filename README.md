@@ -10,7 +10,7 @@ Doom/FX for Super Nintendo with SuperFX GSU2A
 2. in RAM settings, increase Chip to 8 MB and 32-bit chip to at least 16 MB. (The build process puts the object files to be linked in a RAMdisk, so we need enough free space to link everything)  
 
 3. Install SAS/C  
-- Extract the included ``sasc650.zip`` in ``prereqs``.  
+- Extract the included ``sasc650.zip`` in ``01-prereqs``.  
 - Mount the first disk, open it, and run ``Install_SASC_6.50``.  
 - Do not touch any of the options, and click "proceed".  
 - Ensure it is installing to hard disk and click "proceed".  
