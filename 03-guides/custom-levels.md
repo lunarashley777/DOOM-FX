@@ -4,9 +4,9 @@
 
 2. Copy your level to ``02-extra-tools/idbsp`` and start DOSBox. ``idbsp`` is needed to reduce the size of the ``BLOCKMAP`` lump so the level has a better chance of fitting into the ROM.  
 
-3. run ``buildwad [name of your wad]``. For example, for a wad called ``e1m1.wad``, the command would be ``buildwad e1m1``.  
+3. Run ``buildwad [name of your wad]``. For example, for a wad named ``e1m1.wad``, the command would be ``buildwad e1m1``.  
 
-4. When it asks if you want to overwrite, press Y and press enter. After this, you can close DOSBox.  
+4. When it asks if you want to overwrite, press Y and press ENTER. After this, you can close DOSBox.  
 
 5. Copy the WAD from the ``idbsp`` directory to ``HD2/DOOM/1.666/WAD`` and rename it to ``doom.wad``.  
 
