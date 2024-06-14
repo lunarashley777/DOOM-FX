@@ -16,6 +16,6 @@
 
 8. Go to ``HD2/DOOMDATA`` and copy the folder with your level's map number to ``HD2/DOOM/1.666/WAD.DATA/LEVELS``. 
 
-9. Convert the level from Doom format to Reality Engine format by running ``execute rl:make/level eX mY`` where X is the episode number of your level, and Y is the map number.  
+9. Convert the level from Doom format to Reality Engine format by switching to ``rl:binaries`` and running ``execute rl:make/level eX mY`` where X is the episode number of your level, and Y is the map number.  
 
 10. Switch back to ``HD:source`` and run ``smake rl`` to build the game.  
