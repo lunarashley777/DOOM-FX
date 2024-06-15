@@ -963,6 +963,9 @@ EMLIFTSTable
 ;
 ;	* * * * * * *       SONGS       * * * * * * *
 ;
+;	The song utilized in game is merely dependent on what song is in a given table entry. For example, to replace the E1M1 music, you would
+;	go to the E1M1 entry and replace it with the entry for another level. Useful to mix things up in level replacement hacks.
+;
 EMSONGTable
 	dc.w	((e1m1_sng_MODULE<<8)|e1m1_sng)	; SONG Array
 	dc.w	((e1m2_sng_MODULE<<8)|e1m2_sng)

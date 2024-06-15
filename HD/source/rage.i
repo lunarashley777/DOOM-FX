@@ -41,13 +41,16 @@ useIMAGINEER		equ	0		; 1=Enable IMAGINEER Version
 ;
 ;	* * * * * * *       FLUFF SCREENS       * * * * * * *
 ;
+;	NOTICE: For some odd reason it appears that the legal screen is required for the game to boot.
+;	The other fluff screens are disabled by default, to save cartridge space and boot time when testing.
+;
 useSYSINFO		equ	0		; 1=Enable SystemInfo Sequence
 useLOGO			equ	0		; 1=Enable Logo Sequence
-useLOGO2		equ	1 ; 1		; 1=Enable Logo2 Sequence
+useLOGO2		equ	0 ; 1		; 1=Enable Logo2 Sequence
 useSCULPT		equ	0		; 1=Enable Sculptured Sequence
-useTITLE		equ	1 ; 1		; 1=Enable Title Sequence
-useSCORE		equ	1 ; 1		; 1=Enable Score Sequence
-useLEGAL		equ	1 ; 1		; 1=Enable Legal Sequence
+useTITLE		equ	0 ; 1		; 1=Enable Title Sequence
+useSCORE		equ	0 ; 1		; 1=Enable Score Sequence
+useLEGAL		equ	1 ; 1		; 1=Enable Legal Sequence 
 ;
 useDEMO1		equ	0		; 1=Enable Demo1 Sequence
 useDEMO			equ	useDEMO1
@@ -55,6 +58,9 @@ useDEMO			equ	useDEMO1
 
 ;
 ;	* * * * * * *       LEVELS       * * * * * * *
+;
+;	Episode 2 and 3 are disabled, to save cartridge space during testing. Re-enable as you wish.
+;	First levels are kept to avoid crashes upon selecting those episodes
 ;
 useE1M1ONLY		var	0		; 1=Enable E1M1 ONLY
 useE1M1			var	1		; 1=Enable E1M1 "Hangar"
@@ -69,23 +75,23 @@ useE1M9			var	1		; 1=Enable E1M9 "Military Base"
 ;
 useE2M1			var	1		; 1=Enable E2M1 "Deimos Anomaly"
 useE2M2			var	0		; 1=Enable E2M2 "Containment Area"
-useE2M3			var	1		; 1=Enable E2M3 "Refinery"
-useE2M4			var	1		; 1=Enable E2M4 "Deimos Lab"
+useE2M3			var	0		; 1=Enable E2M3 "Refinery"
+useE2M4			var	0		; 1=Enable E2M4 "Deimos Lab"
 useE2M5			var	0		; 1=Enable E2M5 "Command Center"
-useE2M6			var	1		; 1=Enable E2M6 "Halls of the Damned"
+useE2M6			var	0		; 1=Enable E2M6 "Halls of the Damned"
 useE2M7			var	0		; 1=Enable E2M7 "Spawning Vats"
-useE2M8			var	1		; 1=Enable E2M8 "Tower of Babel"
-useE2M9			var	1		; 1=Enable E2M9 "Fortress of Mystery"
+useE2M8			var	0		; 1=Enable E2M8 "Tower of Babel"
+useE2M9			var	0		; 1=Enable E2M9 "Fortress of Mystery"
 ;
 useE3M1			var	1		; 1=Enable E3M1 "Hell Keep"
-useE3M2			var	1		; 1=Enable E3M2 "Slough of Despair"
-useE3M3			var	1		; 1=Enable E3M3 "Pandemonium"
-useE3M4			var	1		; 1=Enable E3M4 "House of Pain"
+useE3M2			var	0		; 1=Enable E3M2 "Slough of Despair"
+useE3M3			var	0		; 1=Enable E3M3 "Pandemonium"
+useE3M4			var	0		; 1=Enable E3M4 "House of Pain"
 useE3M5			var	0		; 1=Enable E3M5 "Unholy Cathedral"
-useE3M6			var	1		; 1=Enable E3M6 "Mt. Erebus"
-useE3M7			var	1 ; 1		; 1=Enable E3M7 "Limbo"
-useE3M8			var	1 ; 1		; 1=Enable E3M8 "Dis"
-useE3M9			var	1 ; 1		; 1=Enable E3M9 "Warrens"
+useE3M6			var	0		; 1=Enable E3M6 "Mt. Erebus"
+useE3M7			var	0 ; 1		; 1=Enable E3M7 "Limbo"
+useE3M8			var	0 ; 1		; 1=Enable E3M8 "Dis"
+useE3M9			var	0 ; 1		; 1=Enable E3M9 "Warrens"
 ;
 useE1M2			var	useE1M2*(1-useE1M1ONLY))
 useE1M3			var	useE1M3*(1-useE1M1ONLY))
