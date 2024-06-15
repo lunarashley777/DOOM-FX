@@ -16,6 +16,15 @@
 
 8. Go to ``HD2/DOOMDATA`` and copy the folder with your level's map number to ``HD2/DOOM/1.666/WAD.DATA/LEVELS``. 
 
-9. Convert the level from Doom format to Reality Engine format by switching to ``rl:binaries`` and running ``execute rl:make/level eX mY`` where X is the episode number of your level, and Y is the map number.  
+9. Convert the level from Doom format to Reality Engine format by switching to ``rl:binaries`` and running ``execute rl:make/level eX mY`` where X is the episode number of your level, and Y is the map number. If you see any error messages about ``touch``, disregard them.  
 
 10. Switch back to ``HD:source`` and run ``smake rl`` to build the game.  
+
+# Troubleshooting
+
+## "Can't FIT section" error
+Try disabling some levels in ``HD/source/rage.i``.  
+You can also enable ``useE1M1ONLY`` if you're only replacing the first map and don't care about any others.  
+
+## The emulator freezes when I try to convert a level!
+You may be using engine features in your level that ``RIPDOOM`` does not support. Usually this is due to Doom II level features such as fast doors. Replace them and it should work fine.  
